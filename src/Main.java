@@ -159,6 +159,19 @@ public class Main {
                     break;
 
                 case 7:
+                    int answer7;
+                    do {
+
+
+
+
+                        System.out.print("Asal Sayı İşlemine Devam Edelim mi?: ");
+                        System.out.println("Evet(1) / Hayır(2)");
+                        answer7 = input.nextInt();
+                        LoopCounter loopCounter = new LoopCounter();
+                        answer7 = loopCounter.LoopCounter(answer7);
+                    }
+                    while(answer7<=0);
 
                 case 8:
                     mainAnswer++;
