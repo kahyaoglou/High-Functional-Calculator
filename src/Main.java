@@ -160,18 +160,38 @@ public class Main {
 
                 case 7:
                     int answer7;
+                    int num1, num2;
                     do {
-
-
-
-
-                        System.out.print("Asal Sayı İşlemine Devam Edelim mi?: ");
+                        System.out.print("Hangi Hesaplamayı Yapalım?: ");
+                        System.out.println("EBOB(1) / EKOK(2)");
+                        int ebobEkokSecim = input.nextInt();
+                        if (ebobEkokSecim == 1){
+                            System.out.print("İlk Sayıyı Giriniz: ");
+                            num1 = input.nextInt();
+                            System.out.print("İkinci Sayıyı Giriniz: ");
+                            num2 = input.nextInt();
+                            GcdLcmCalculator gcdCalculator = new GcdLcmCalculator();
+                            gcdCalculator.GCDCalculator(num1, num2);
+                        }
+                        else if (ebobEkokSecim == 2){
+                            System.out.print("İlk Sayıyı Giriniz: ");
+                            num1 = input.nextInt();
+                            System.out.print("İkinci Sayıyı Giriniz: ");
+                            num2 = input.nextInt();
+                            GcdLcmCalculator lcmCalculator = new GcdLcmCalculator();
+                            lcmCalculator.LCMCalculator(num1, num2);
+                        }
+                        else{
+                            System.out.println("Yanlış Seçim Yaptınız!");
+                        }
+                        System.out.print("EBOB/EKOK İşlemine Devam Edelim mi?: ");
                         System.out.println("Evet(1) / Hayır(2)");
                         answer7 = input.nextInt();
                         LoopCounter loopCounter = new LoopCounter();
                         answer7 = loopCounter.LoopCounter(answer7);
                     }
                     while(answer7<=0);
+                    break;
 
                 case 8:
                     mainAnswer++;
