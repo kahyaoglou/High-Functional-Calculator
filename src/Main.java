@@ -15,8 +15,9 @@ public class Main {
             System.out.println("6- Asal Sayı Hesaplama");
             System.out.println("7- EBOB - EKOK Hesaplama");
             System.out.println("8- Dairede Alan ve Çevre Hesaplama");
-            System.out.println("9- Armstrong Sayıları Hesaplama");
-            System.out.println("10- Çıkış");
+            System.out.println("9- Üçgend Alan Hesaplama");
+            System.out.println("10- Armstrong Sayıları Hesaplama");
+            System.out.println("11- Çıkış");
 
             secim = input.nextInt();
             switch(secim){
@@ -238,20 +239,35 @@ public class Main {
                 case 9:
                     int answer9;
                     do {
+
+
+
+                        System.out.print("Alan Hesaplamaya Devam Edelim mi?: ");
+                        System.out.println("Evet(1) / Hayır(2)");
+                        answer9 = input.nextInt();
+                        LoopCounter loopCounter = new LoopCounter();
+                        answer9 = loopCounter.LoopCounter(answer9);
+                    }
+                    while(answer9<=0);
+                    break;
+
+                case 10:
+                    int answer10;
+                    do {
                         System.out.print("Sayıyı Giriniz: ");
                         int armstrongNumber = input.nextInt();
                         ArmstrongCalculator armstrongCalculator = new ArmstrongCalculator();
                         armstrongCalculator.ArmstrongCalculate(armstrongNumber);
                         System.out.print("Hesaplamaya Devam Edelim mi?: ");
                         System.out.println("Evet(1) / Hayır(2)");
-                        answer9 = input.nextInt();
+                        answer10 = input.nextInt();
                         LoopCounter loopCounter = new LoopCounter();
-                        answer9 = loopCounter.LoopCounter(answer9);
+                        answer10 = loopCounter.LoopCounter(answer10);
                     }
-                    while(answer9 <= 0);
+                    while(answer10 <= 0);
                     break;
 
-                case 10:
+                case 11:
                     mainAnswer++;
                     System.out.println("Çıkış Yapılıyor...");
                     break;
