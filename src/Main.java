@@ -239,9 +239,14 @@ public class Main {
                 case 9:
                     int answer9;
                     do {
-
-
-
+                        System.out.print("Üçgenin ilk kenarını giriniz: ");
+                        int kenar1 = input.nextInt();
+                        System.out.print("Üçgenin ikinci kenarını giriniz: ");
+                        int kenar2 = input.nextInt();
+                        System.out.print("Üçgenin üçüncü kenarını giriniz: ");
+                        int kenar3 = input.nextInt();
+                        TriangleCalculator triangleCalculator = new TriangleCalculator();
+                        triangleCalculator.TriangleAreaCalculator(kenar1, kenar2, kenar3);
                         System.out.print("Alan Hesaplamaya Devam Edelim mi?: ");
                         System.out.println("Evet(1) / Hayır(2)");
                         answer9 = input.nextInt();
