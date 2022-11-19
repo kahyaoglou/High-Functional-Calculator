@@ -238,6 +238,8 @@ public class Main {
                 case 9:
                     int answer9;
                     do {
+                        System.out.print("Sayıyı Giriniz: ");
+                        int armstrongNumber = input.nextInt();
 
 
 
