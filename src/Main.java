@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -196,12 +197,36 @@ public class Main {
 
                 case 8:
                     int answer8;
+                    int a,r;
                     do {
-
-
-
-
-                        System.out.print("İşleme Devam Edelim mi?: ");
+                        System.out.println("Hangi İşlemi Yapalım?");
+                        System.out.println("- Daire Çevre(1)");
+                        System.out.println("- Daire Alan(2)");
+                        System.out.print("- Merkez Açılı Dairede Alan(3): ");
+                        int daireSecim = input.nextInt();
+                        CircleCalculator circleCalculator = new CircleCalculator();
+                        if(daireSecim == 1){
+                            System.out.print("Dairenin Yarıçapını Giriniz: ");
+                            r = input.nextInt();
+                            circleCalculator.circumferenceCalculator(r);
+                        }
+                        else if(daireSecim == 2){
+                            System.out.print("Dairenin Yarıçapını Giriniz: ");
+                            r = input.nextInt();
+                            circleCalculator.areaCalculator(r);
+                        }
+                        else if(daireSecim == 3)
+                        {
+                            System.out.print("Dairenin Yarıçapını Giriniz: ");
+                            r = input.nextInt();
+                            System.out.print("Merkez Açı Ölçüsü Değerini Giriniz: ");
+                            a = input.nextInt();
+                            circleCalculator.centralAngleAreaCalculator(r, a);
+                        }
+                        else {
+                            System.out.println("Yanlış Seçim Yaptınız!");
+                        }
+                        System.out.print("Alan/Çevre Hesaplamaya Devam Edelim mi?: ");
                         System.out.println("Evet(1) / Hayır(2)");
                         answer8 = input.nextInt();
                         LoopCounter loopCounter = new LoopCounter();
