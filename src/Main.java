@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -219,7 +218,7 @@ public class Main {
                         {
                             System.out.print("Dairenin Yarıçapını Giriniz: ");
                             r = input.nextInt();
-                            System.out.print("Merkez Açı Ölçüsü Değerini Giriniz: ");
+                            System.out.print("Merkez Açı Ölçüsünü Giriniz: ");
                             a = input.nextInt();
                             circleCalculator.centralAngleAreaCalculator(r, a);
                         }
@@ -234,7 +233,6 @@ public class Main {
                     }
                     while(answer8<=0);
                     break;
-
 
                 case 9:
                     mainAnswer++;
