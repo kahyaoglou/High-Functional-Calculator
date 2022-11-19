@@ -240,9 +240,8 @@ public class Main {
                     do {
                         System.out.print("Sayıyı Giriniz: ");
                         int armstrongNumber = input.nextInt();
-
-
-
+                        ArmstrongCalculator armstrongCalculator = new ArmstrongCalculator();
+                        armstrongCalculator.ArmstrongCalculate(armstrongNumber);
                         System.out.print("Hesaplamaya Devam Edelim mi?: ");
                         System.out.println("Evet(1) / Hayır(2)");
                         answer9 = input.nextInt();
@@ -250,6 +249,7 @@ public class Main {
                         answer9 = loopCounter.LoopCounter(answer9);
                     }
                     while(answer9 <= 0);
+                    break;
 
                 case 10:
                     mainAnswer++;
