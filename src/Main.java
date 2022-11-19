@@ -15,7 +15,8 @@ public class Main {
             System.out.println("6- Asal Sayı Hesaplama");
             System.out.println("7- EBOB - EKOK Hesaplama");
             System.out.println("8- Dairede Alan ve Çevre Hesaplama");
-            System.out.println("9- Çıkış");
+            System.out.println("9- Armstrong Sayıları Hesaplama");
+            System.out.println("10- Çıkış");
 
             secim = input.nextInt();
             switch(secim){
@@ -235,6 +236,20 @@ public class Main {
                     break;
 
                 case 9:
+                    int answer9;
+                    do {
+
+
+
+                        System.out.print("Hesaplamaya Devam Edelim mi?: ");
+                        System.out.println("Evet(1) / Hayır(2)");
+                        answer9 = input.nextInt();
+                        LoopCounter loopCounter = new LoopCounter();
+                        answer9 = loopCounter.LoopCounter(answer9);
+                    }
+                    while(answer9 <= 0);
+
+                case 10:
                     mainAnswer++;
                     System.out.println("Çıkış Yapılıyor...");
                     break;
@@ -246,6 +261,5 @@ public class Main {
             System.out.println();
         }
         while(mainAnswer <= 0);
-
     }
 }
