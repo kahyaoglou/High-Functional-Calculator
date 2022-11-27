@@ -1,5 +1,19 @@
+import java.util.Scanner;
 public class GcdLcmCalculator {
-    public void GCDCalculator(int num1, int num2) {
+    Scanner input = new Scanner(System.in);
+    int num1, num2, secim;
+    public int GcdLcmMenu(){
+        System.out.print("Hangi Hesaplamayı Yapalım?: ");
+        System.out.println("EBOB(1) / EKOK(2)");
+        secim = input.nextInt();
+        return secim;
+
+    }
+    public void GCDCalculator() {
+        System.out.print("İlk Sayıyı Giriniz: ");
+        num1 = input.nextInt();
+        System.out.print("İkinci Sayıyı Giriniz: ");
+        num2 = input.nextInt();
         int i = 1, gcd = 1;
         while(i<=num1){
             if ((num1 % i == 0) && (num2 % i ==0)){
@@ -11,7 +25,11 @@ public class GcdLcmCalculator {
         System.out.println(num1 + " ve " + num2 + "'nin EBOB'u: " + gcd);
     }
 
-    public void LCMCalculator(int num1, int num2){
+    public void LCMCalculator(){
+        System.out.print("İlk Sayıyı Giriniz: ");
+        num1 = input.nextInt();
+        System.out.print("İkinci Sayıyı Giriniz: ");
+        num2 = input.nextInt();
         int i = 1, lcm = 1;
 
         while(i <= num1*num2){

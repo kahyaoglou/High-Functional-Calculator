@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class ArithmeticOperations {
     double toplam, fark, carpim, bolum;
-    int secim2;
+    int secim;
     Scanner input = new Scanner(System.in);
     public int ArithmeticMenu(){
         System.out.println("Yapilacak Aritmetik İşlemi Seçiniz:");
@@ -9,8 +9,8 @@ public class ArithmeticOperations {
         System.out.println("2- Çıkarma");
         System.out.println("3- Çarpma");
         System.out.println("4- Bölme");
-        secim2 = input.nextInt();
-        return secim2;
+        secim = input.nextInt();
+        return secim;
     }
 
     public void Toplam(){

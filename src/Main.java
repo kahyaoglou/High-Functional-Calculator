@@ -12,13 +12,13 @@ public class Main {
 
             switch(secim){
                 case 1:
-                    int secim2;
+                    int chooseArithmetic;
                     ArithmeticOperations menu = new ArithmeticOperations();
+                    chooseArithmetic = menu.ArithmeticMenu();
                     ArithmeticOperations result = new ArithmeticOperations();
-                    secim2 = menu.ArithmeticMenu();
 
                     do {
-                        switch(secim2) {
+                        switch(chooseArithmetic) {
                             case 1:
                                 result.Toplam();
                                 break;
@@ -85,29 +85,20 @@ public class Main {
                     break;
 
                 case 7:
-                    int num1, num2;
+                    int chooseGdcLcm;
+                    GcdLcmCalculator chooseMenu = new GcdLcmCalculator();
+                    chooseGdcLcm = chooseMenu.GcdLcmMenu();
+                    GcdLcmCalculator gcdLcmObject = new GcdLcmCalculator();
                     do {
-                        System.out.print("Hangi Hesaplamayı Yapalım?: ");
-                        System.out.println("EBOB(1) / EKOK(2)");
-                        int ebobEkokSecim = input.nextInt();
-                        if (ebobEkokSecim == 1){
-                            System.out.print("İlk Sayıyı Giriniz: ");
-                            num1 = input.nextInt();
-                            System.out.print("İkinci Sayıyı Giriniz: ");
-                            num2 = input.nextInt();
-                            GcdLcmCalculator gcdCalculator = new GcdLcmCalculator();
-                            gcdCalculator.GCDCalculator(num1, num2);
-                        }
-                        else if (ebobEkokSecim == 2){
-                            System.out.print("İlk Sayıyı Giriniz: ");
-                            num1 = input.nextInt();
-                            System.out.print("İkinci Sayıyı Giriniz: ");
-                            num2 = input.nextInt();
-                            GcdLcmCalculator lcmCalculator = new GcdLcmCalculator();
-                            lcmCalculator.LCMCalculator(num1, num2);
-                        }
-                        else{
-                            System.out.println("Yanlış Seçim Yaptınız!");
+                        switch(chooseGdcLcm){
+                            case 1:
+                                gcdLcmObject.GCDCalculator();
+                                break;
+                            case 2:
+                                gcdLcmObject.LCMCalculator();
+                                break;
+                            default:
+                                System.out.println("Hatalı Seçim Yaptınız!");
                         }
                         loopCounter.LoopCounter();
                     }
