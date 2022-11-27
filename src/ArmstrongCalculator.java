@@ -1,10 +1,17 @@
+import java.util.Scanner;
 public class ArmstrongCalculator {
-    public void ArmstrongCalculate(int number){
+    Scanner input = new Scanner(System.in);
+    public void ArmstrongCalculate(){
         int basamakNumber = 0;
-        int tempNumber = number;
+        int armstrongNumber = 0;
+        int tempNumber = armstrongNumber;
         int basamakValue;
         int result = 0;
         int basamakPower;
+
+
+        System.out.print("Sayıyı Giriniz: ");
+        armstrongNumber = input.nextInt();
 
         while(tempNumber != 0)
         {
@@ -12,7 +19,7 @@ public class ArmstrongCalculator {
             basamakNumber++;
         }
 
-        tempNumber = number;
+        tempNumber = armstrongNumber;
 
         while (tempNumber != 0)
         {
@@ -27,13 +34,13 @@ public class ArmstrongCalculator {
             tempNumber = tempNumber / 10;
         }
 
-        if (result == number)
+        if (result == armstrongNumber)
         {
-            System.out.println(number + " sayısı bir Armstrong sayıdır.");
+            System.out.println(armstrongNumber + " sayısı bir Armstrong sayıdır.");
         }
         else
         {
-            System.out.println(number + " sayısı bir Armstrong sayı değildir.");
+            System.out.println(armstrongNumber + " sayısı bir Armstrong sayı değildir.");
         }
     }
 

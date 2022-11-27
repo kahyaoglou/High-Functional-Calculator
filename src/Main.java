@@ -154,10 +154,8 @@ public class Main {
 
                 case 10:
                     do {
-                        System.out.print("Sayıyı Giriniz: ");
-                        int armstrongNumber = input.nextInt();
                         ArmstrongCalculator armstrongCalculator = new ArmstrongCalculator();
-                        armstrongCalculator.ArmstrongCalculate(armstrongNumber);
+                        armstrongCalculator.ArmstrongCalculate();
                         loopCounter.LoopCounter();
                     }
                     while(loopCounter.answer <= 0);
