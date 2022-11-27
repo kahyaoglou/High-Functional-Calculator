@@ -14,26 +14,20 @@ public class Main {
             switch(secim){
                 case 1:
                     int chooseArithmetic;
-                    ArithmeticOperations menu = new ArithmeticOperations();
-                    chooseArithmetic = menu.ArithmeticMenu();
-                    ArithmeticOperations result = new ArithmeticOperations();
-
+                    ArithmeticOperations arithmeticOperations = new ArithmeticOperations();
                     do {
+                        chooseArithmetic = arithmeticOperations.ArithmeticMenu();
                         if (chooseArithmetic == 1) {
-                            result.Toplam();
-                            break;
+                            arithmeticOperations.Toplam();
                         }
                         else if(chooseArithmetic == 2){
-                            result.Fark();
-                            break;
+                            arithmeticOperations.Fark();
                         }
                         else if(chooseArithmetic == 3){
-                            result.Carpim();
-                            break;
+                            arithmeticOperations.Carpim();
                         }
                         else if (chooseArithmetic == 4){
-                            result.Bolum();
-                            break;
+                            arithmeticOperations.Bolum();
                         }
                         else{
                             main.errorMessage();
@@ -91,17 +85,14 @@ public class Main {
 
                 case 7:
                     int chooseGcdLcm;
-                    GcdLcmCalculator chooseMenu = new GcdLcmCalculator();
-                    chooseGcdLcm = chooseMenu.GcdLcmMenu();
                     GcdLcmCalculator gcdLcmObject = new GcdLcmCalculator();
                     do {
+                        chooseGcdLcm = gcdLcmObject.GcdLcmMenu();
                         if (chooseGcdLcm == 1){
                             gcdLcmObject.GCDCalculator();
-                            break;
                         }
                         else if(chooseGcdLcm == 2){
                             gcdLcmObject.LCMCalculator();
-                            break;
                         }
                         else{
                             main.errorMessage();
@@ -136,17 +127,28 @@ public class Main {
                     break;
 
                 case 9:
+                    int chooseTriangle;
+                    TriangleCalculator triangleCalculator = new TriangleCalculator();
                     do {
-                        System.out.println("Hangi Hesaplama Yöntemini Kullanalım?:");
-                        System.out.println("Heron ");
-                        System.out.print("Üçgenin ilk kenarını giriniz: ");
-                        int kenar1 = input.nextInt();
-                        System.out.print("Üçgenin ikinci kenarını giriniz: ");
-                        int kenar2 = input.nextInt();
-                        System.out.print("Üçgenin üçüncü kenarını giriniz: ");
-                        int kenar3 = input.nextInt();
-                        TriangleCalculator triangleCalculator = new TriangleCalculator();
-                        triangleCalculator.HeronAreaCalculator(kenar1, kenar2, kenar3);
+                        chooseTriangle = triangleCalculator.TriangleCalculatorMenu();
+                        if(chooseTriangle == 1){
+                            triangleCalculator.EquilateralTriangleArea();
+                        }
+                        else if(chooseTriangle == 2){
+                            triangleCalculator.HeightAreaCalculator();
+                        }
+                        else if(chooseTriangle == 3){
+                            triangleCalculator.HeronAreaCalculator();
+                        }
+                        else if(chooseTriangle == 4){
+                            triangleCalculator.TangentCircleAreaCalculator();
+                        }
+                        else if(chooseTriangle ==5){
+                            triangleCalculator.CircumCircleAreaCalculator();
+                        }
+                        else{
+                            main.errorMessage();
+                        }
                         loopCounter.LoopCounter();
                     }
                     while(loopCounter.answer <= 0);

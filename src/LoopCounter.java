@@ -4,7 +4,7 @@ public class LoopCounter {
     int answer;
 
     public int LoopCounter(){
-        System.out.println("Aritmetik İşlemlere Devam Edelim mi?");
+        System.out.println("İşleme Devam Edelim mi?");
         System.out.println("Evet(1) / Hayır(2)");
         answer = input.nextInt();
 
