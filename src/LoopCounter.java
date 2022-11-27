@@ -1,9 +1,13 @@
+import java.util.Scanner;
 public class LoopCounter {
-    public void LoopCounterCheck(){
+    Scanner input = new Scanner(System.in);
+    int answer;
+
+    public int LoopCounter(){
         System.out.println("Aritmetik İşlemlere Devam Edelim mi?");
         System.out.println("Evet(1) / Hayır(2)");
-    }
-    public int LoopCounter(int answer){
+        answer = input.nextInt();
+
         if(answer == 1) {
             answer = 0;
         }

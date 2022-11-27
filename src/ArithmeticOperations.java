@@ -13,39 +13,39 @@ public class ArithmeticOperations {
         return secim2;
     }
 
-    public double Toplam(){
+    public void Toplam(){
         System.out.print("Lütfen İlk Sayıyı Giriniz: ");
         double firstTop = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
         double secondTop = input.nextDouble();
         toplam = (firstTop + secondTop);
-        return toplam;
+        System.out.println("Sonuç: " + toplam);
     }
 
-    public double Fark(){
+    public void Fark(){
         System.out.print("Lütfen İlk Sayıyı Giriniz: ");
         double firstCik = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
         double secondCik = input.nextDouble();
         fark = firstCik-secondCik;
-        return fark;
+        System.out.println("Sonuç: " + fark);
     }
 
-    public double Carpim() {
+    public void Carpim() {
         System.out.print("Lütfen İlk Sayıyı Giriniz: ");
         double firstCar = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
         double secondCar = input.nextDouble();
         carpim = firstCar * secondCar;
-        return carpim;
+        System.out.println("Sonuç: " + carpim);
     }
 
-    public double Bolum(){
+    public void Bolum(){
         System.out.print("Lütfen İlk Sayıyı Giriniz: ");
         double firstBol = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
         double secondBol = input.nextDouble();
         bolum = firstBol / secondBol;
-        return bolum;
+        System.out.println("Sonuç: " + bolum);
     }
 }
