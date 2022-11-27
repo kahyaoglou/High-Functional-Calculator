@@ -1,24 +1,51 @@
-import java.text.DecimalFormat;
+import java.util.Scanner;
 public class ArithmeticOperations {
     double toplam, fark, carpim, bolum;
-
-    public void Toplam(double a, double b){
-        toplam = a+b;
-        System.out.println("Sonuç: " + toplam);
+    int secim2;
+    Scanner input = new Scanner(System.in);
+    public int ArithmeticMenu(){
+        System.out.println("Yapilacak Aritmetik İşlemi Seçiniz:");
+        System.out.println("1- Toplama");
+        System.out.println("2- Çıkarma");
+        System.out.println("3- Çarpma");
+        System.out.println("4- Bölme");
+        secim2 = input.nextInt();
+        return secim2;
     }
 
-    public void Fark(double a, double b){
-        fark = a-b;
-        System.out.println("Sonuç: " + fark);
+    public double Toplam(){
+        System.out.print("Lütfen İlk Sayıyı Giriniz: ");
+        double firstTop = input.nextDouble();
+        System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
+        double secondTop = input.nextDouble();
+        toplam = (firstTop + secondTop);
+        return toplam;
     }
 
-    public void Carpim(double a, double b) {
-        carpim = a*b;
-        System.out.println("Sonuç: " + carpim);
+    public double Fark(){
+        System.out.print("Lütfen İlk Sayıyı Giriniz: ");
+        double firstCik = input.nextDouble();
+        System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
+        double secondCik = input.nextDouble();
+        fark = firstCik-secondCik;
+        return fark;
     }
 
-    public void Bolum(double a, double b){
-        bolum = a/b;
-        System.out.println("Sonuc: " + bolum);
+    public double Carpim() {
+        System.out.print("Lütfen İlk Sayıyı Giriniz: ");
+        double firstCar = input.nextDouble();
+        System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
+        double secondCar = input.nextDouble();
+        carpim = firstCar * secondCar;
+        return carpim;
+    }
+
+    public double Bolum(){
+        System.out.print("Lütfen İlk Sayıyı Giriniz: ");
+        double firstBol = input.nextDouble();
+        System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
+        double secondBol = input.nextDouble();
+        bolum = firstBol / secondBol;
+        return bolum;
     }
 }

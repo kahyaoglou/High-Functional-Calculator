@@ -5,72 +5,38 @@ public class Main {
         int secim;
         int mainAnswer = 0;
         do{
-            System.out.println("Lütfen Yapılacak İşlemi Seçiniz:");
-            System.out.println("********************************");
-            System.out.println("1- Temel Aritmetik İşlemleri");
-            System.out.println("2- Üs Alma");
-            System.out.println("3- Karekök Alma");
-            System.out.println("4- Faktöriyel Hesaplama");
-            System.out.println("5- Kombinasyon Hesaplama");
-            System.out.println("6- Asal Sayı Hesaplama");
-            System.out.println("7- EBOB - EKOK Hesaplama");
-            System.out.println("8- Dairede Alan ve Çevre Hesaplama");
-            System.out.println("9- Üçgende Alan Hesaplama");
-            System.out.println("10- Armstrong Sayıları Hesaplama");
-            System.out.println("11- Çıkış");
-
+            MainMenu main = new MainMenu();
+            main.mainMenuChoose();
             secim = input.nextInt();
+
             switch(secim){
                 case 1:
-                    int secim2;
                     int answer1;
+                    int secim2;
+                    ArithmeticOperations menu = new ArithmeticOperations();
+                    ArithmeticOperations result = new ArithmeticOperations();
+                    secim2 = menu.ArithmeticMenu();
                     do {
-                        System.out.println("Yapilacak Aritmetik İşlemi Seçiniz:");
-                        System.out.println("1- Toplama");
-                        System.out.println("2- Çıkarma");
-                        System.out.println("3- Çarpma");
-                        System.out.println("4- Bölme");
-                        secim2 = input.nextInt();
-                        ArithmeticOperations result = new ArithmeticOperations();
-
                         switch(secim2) {
                             case 1:
-                                System.out.print("Lütfen İlk Sayıyı Giriniz: ");
-                                double firstTop = input.nextDouble();
-                                System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
-                                double secondTop = input.nextDouble();
-                                result.Toplam(firstTop, secondTop);
+                                result.Toplam();
                                 break;
                             case 2:
-                                System.out.print("Lütfen İlk Sayıyı Giriniz: ");
-                                double firstCik = input.nextDouble();
-                                System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
-                                double secondCik = input.nextDouble();
-                                result.Fark(firstCik, secondCik);
+                                result.Fark();
                                 break;
                             case 3:
-                                System.out.print("Lütfen İlk Sayıyı Giriniz: ");
-                                double firstCar = input.nextDouble();
-                                System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
-                                double secondCar = input.nextDouble();
-                                result.Carpim(firstCar, secondCar);
+                                result.Carpim();
                                 break;
                             case 4:
-                                System.out.print("Lütfen İlk Sayıyı Giriniz: ");
-                                double firstBol = input.nextDouble();
-                                System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
-                                double secondBol = input.nextDouble();
-                                result.Bolum(firstBol, secondBol);
+                                result.Bolum();
                                 break;
                             default:
                                 System.out.println("Hatalı Seçim Yaptınız!");
                         }
-                        System.out.println("Aritmetik İşlemlere Devam Edelim mi?");
-                        System.out.println("Evet(1) / Hayır(2)");
-                        answer1 = input.nextInt();
                         LoopCounter loopCounter = new LoopCounter();
+                        loopCounter.LoopCounterCheck();
+                        answer1 = input.nextInt();
                         answer1 = loopCounter.LoopCounter(answer1);
-
                     }
                     while(answer1 <= 0);
                     break;
