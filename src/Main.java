@@ -19,22 +19,26 @@ public class Main {
                     ArithmeticOperations result = new ArithmeticOperations();
 
                     do {
-                        switch(chooseArithmetic) {
-                            case 1:
-                                result.Toplam();
-                                break;
-                            case 2:
-                                result.Fark();
-                                break;
-                            case 3:
-                                result.Carpim();
-                                break;
-                            case 4:
-                                result.Bolum();
-                                break;
-                            default:
-                                main.errorMessage();
+                        if (chooseArithmetic == 1) {
+                            result.Toplam();
+                            break;
                         }
+                        else if(chooseArithmetic == 2){
+                            result.Fark();
+                            break;
+                        }
+                        else if(chooseArithmetic == 3){
+                            result.Carpim();
+                            break;
+                        }
+                        else if (chooseArithmetic == 4){
+                            result.Bolum();
+                            break;
+                        }
+                        else{
+                            main.errorMessage();
+                        }
+
                         loopCounter.LoopCounter();
                     }
                     while(loopCounter.answer <= 0);
@@ -86,21 +90,23 @@ public class Main {
                     break;
 
                 case 7:
-                    int chooseGdcLcm;
+                    int chooseGcdLcm;
                     GcdLcmCalculator chooseMenu = new GcdLcmCalculator();
-                    chooseGdcLcm = chooseMenu.GcdLcmMenu();
+                    chooseGcdLcm = chooseMenu.GcdLcmMenu();
                     GcdLcmCalculator gcdLcmObject = new GcdLcmCalculator();
                     do {
-                        switch(chooseGdcLcm){
-                            case 1:
-                                gcdLcmObject.GCDCalculator();
-                                break;
-                            case 2:
-                                gcdLcmObject.LCMCalculator();
-                                break;
-                            default:
-                                main.errorMessage();
+                        if (chooseGcdLcm == 1){
+                            gcdLcmObject.GCDCalculator();
+                            break;
                         }
+                        else if(chooseGcdLcm == 2){
+                            gcdLcmObject.LCMCalculator();
+                            break;
+                        }
+                        else{
+                            main.errorMessage();
+                        }
+
                         loopCounter.LoopCounter();
                     }
                     while(loopCounter.answer <= 0);
@@ -109,15 +115,15 @@ public class Main {
                 case 8:
                     do {
                         CircleCalculator circleCalculator = new CircleCalculator();
-                        int daireSecim = circleCalculator.circleCalculatorMenu();
+                        int chooseCircleOperations = circleCalculator.circleCalculatorMenu();
 
-                        if(daireSecim == 1){
+                        if(chooseCircleOperations == 1){
                             circleCalculator.circumferenceCalculator();
                         }
-                        else if(daireSecim == 2){
+                        else if(chooseCircleOperations == 2){
                             circleCalculator.areaCalculator();
                         }
-                        else if(daireSecim == 3)
+                        else if(chooseCircleOperations == 3)
                         {
                             circleCalculator.centralAngleAreaCalculator();
                         }
