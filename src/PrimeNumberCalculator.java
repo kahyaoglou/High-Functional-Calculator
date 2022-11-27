@@ -1,10 +1,14 @@
+import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
 public class PrimeNumberCalculator {
+    Scanner input = new Scanner(System.in);
     int control;
     List<Integer> list = new ArrayList<>();
-    public void PrimeNumberCalculate(int primeNum){
+    public void PrimeNumberCalculate(){
+        System.out.print("Sayıyı Giriniz: ");
+        int primeNum = input.nextInt();
         for(int i=2; i<= primeNum; i++){
             control = 0;
             for (int j=2; j<i; j++)

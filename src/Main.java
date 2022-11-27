@@ -68,12 +68,8 @@ public class Main {
 
                 case 5:
                     do {
-                        System.out.print("Kümemiz Kaç Elemanlı?: ");
-                        int group = input.nextInt();
-                        System.out.print("Oluşacak Küme Kaç Elemanlı Olsun?: ");
-                        int littleGroup = input.nextInt();
                         CombinationCalculator combinationCalculator = new CombinationCalculator();
-                        combinationCalculator.Combination(group, littleGroup);
+                        combinationCalculator.Combination();
                         loopCounter.LoopCounter();
                     }
                     while(loopCounter.answer <= 0);
@@ -81,10 +77,8 @@ public class Main {
 
                 case 6:
                     do{
-                        System.out.print("Sayıyı Giriniz: ");
-                        int primeNum = input.nextInt();
                         PrimeNumberCalculator primeNumberCalculator = new PrimeNumberCalculator();
-                        primeNumberCalculator.PrimeNumberCalculate(primeNum);
+                        primeNumberCalculator.PrimeNumberCalculate();
                         loopCounter.LoopCounter();
                     }
                     while(loopCounter.answer <= 0);
