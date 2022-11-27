@@ -14,4 +14,8 @@ public class MainMenu {
         System.out.println("10- Armstrong Sayıları Hesaplama");
         System.out.println("11- Çıkış");
     }
+
+    public void errorMessage(){
+        System.out.println("Hatalı Seçim Yaptınız!");
+    }
 }

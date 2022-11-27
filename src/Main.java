@@ -6,9 +6,10 @@ public class Main {
         int mainAnswer = 0;
         do{
             MainMenu main = new MainMenu();
+            LoopCounter loopCounter = new LoopCounter();
+
             main.mainMenuChoose();
             secim = input.nextInt();
-            LoopCounter loopCounter = new LoopCounter();
 
             switch(secim){
                 case 1:
@@ -32,7 +33,7 @@ public class Main {
                                 result.Bolum();
                                 break;
                             default:
-                                System.out.println("Hatalı Seçim Yaptınız!");
+                                main.errorMessage();
                         }
                         loopCounter.LoopCounter();
                     }
@@ -98,7 +99,7 @@ public class Main {
                                 gcdLcmObject.LCMCalculator();
                                 break;
                             default:
-                                System.out.println("Hatalı Seçim Yaptınız!");
+                                main.errorMessage();
                         }
                         loopCounter.LoopCounter();
                     }
