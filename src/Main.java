@@ -60,7 +60,7 @@ public class Main {
                 case 4:
                     do {
                         FactorialCalculator factorialCalculator = new FactorialCalculator();
-                        factorialCalculator.Factorial(factorial);
+                        factorialCalculator.Factorial();
                         loopCounter.LoopCounter();
                     }
                     while(loopCounter.answer <= 0);
