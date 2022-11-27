@@ -107,34 +107,22 @@ public class Main {
                     break;
 
                 case 8:
-                    int a,r;
                     do {
-                        System.out.println("Hangi İşlemi Yapalım?");
-                        System.out.println("- Daire Çevre(1)");
-                        System.out.println("- Daire Alan(2)");
-                        System.out.print("- Merkez Açılı Dairede Alan(3): ");
-                        int daireSecim = input.nextInt();
                         CircleCalculator circleCalculator = new CircleCalculator();
+                        int daireSecim = circleCalculator.circleCalculatorMenu();
+
                         if(daireSecim == 1){
-                            System.out.print("Dairenin Yarıçapını Giriniz: ");
-                            r = input.nextInt();
-                            circleCalculator.circumferenceCalculator(r);
+                            circleCalculator.circumferenceCalculator();
                         }
                         else if(daireSecim == 2){
-                            System.out.print("Dairenin Yarıçapını Giriniz: ");
-                            r = input.nextInt();
-                            circleCalculator.areaCalculator(r);
+                            circleCalculator.areaCalculator();
                         }
                         else if(daireSecim == 3)
                         {
-                            System.out.print("Dairenin Yarıçapını Giriniz: ");
-                            r = input.nextInt();
-                            System.out.print("Merkez Açı Ölçüsünü Giriniz: ");
-                            a = input.nextInt();
-                            circleCalculator.centralAngleAreaCalculator(r, a);
+                            circleCalculator.centralAngleAreaCalculator();
                         }
                         else {
-                            System.out.println("Yanlış Seçim Yaptınız!");
+                            main.errorMessage();
                         }
                         loopCounter.LoopCounter();
                     }
