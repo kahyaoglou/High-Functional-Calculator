@@ -15,7 +15,7 @@ public class Main {
             System.out.println("6- Asal Sayı Hesaplama");
             System.out.println("7- EBOB - EKOK Hesaplama");
             System.out.println("8- Dairede Alan ve Çevre Hesaplama");
-            System.out.println("9- Üçgend Alan Hesaplama");
+            System.out.println("9- Üçgende Alan Hesaplama");
             System.out.println("10- Armstrong Sayıları Hesaplama");
             System.out.println("11- Çıkış");
 
@@ -239,6 +239,8 @@ public class Main {
                 case 9:
                     int answer9;
                     do {
+                        System.out.println("Hangi Hesaplama Yöntemini Kullanalım?:");
+                        System.out.println("Heron ");
                         System.out.print("Üçgenin ilk kenarını giriniz: ");
                         int kenar1 = input.nextInt();
                         System.out.print("Üçgenin ikinci kenarını giriniz: ");
@@ -246,7 +248,7 @@ public class Main {
                         System.out.print("Üçgenin üçüncü kenarını giriniz: ");
                         int kenar3 = input.nextInt();
                         TriangleCalculator triangleCalculator = new TriangleCalculator();
-                        triangleCalculator.TriangleAreaCalculator(kenar1, kenar2, kenar3);
+                        triangleCalculator.HeronAreaCalculator(kenar1, kenar2, kenar3);
                         System.out.print("Alan Hesaplamaya Devam Edelim mi?: ");
                         System.out.println("Evet(1) / Hayır(2)");
                         answer9 = input.nextInt();

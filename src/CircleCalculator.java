@@ -12,7 +12,12 @@ public class CircleCalculator {
     }
 
     public void centralAngleAreaCalculator(int r, int a){
-        aciAlan = (pi * (r * r) * a)/360;
-        System.out.println("Merkez Açılı Alan: " + aciAlan);
+        if (a >=0 && a <= 360){
+            aciAlan = (pi * (r * r) * a)/360;
+            System.out.println("Merkez Açılı Alan: " + aciAlan);
+        }
+        else{
+            System.out.println("Merkez açı 0 ile 360 derece arasında olmalıdır!");
+        }
     }
 }
