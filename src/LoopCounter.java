@@ -3,7 +3,7 @@ public class LoopCounter {
     Scanner input = new Scanner(System.in);
     int answer;
 
-    public int LoopCount(){
+    public void LoopCount(){
         System.out.println("İşleme Devam Edelim mi?");
         System.out.println("Evet(1) / Hayır(2)");
         answer = input.nextInt();
@@ -19,6 +19,5 @@ public class LoopCounter {
             System.out.println("Ana Menüye Yönlendiriliyorsunuz...");
             answer = 1;
         }
-        return answer;
     }
 }
