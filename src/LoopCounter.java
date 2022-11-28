@@ -15,7 +15,7 @@ public class LoopCounter {
             answer = 1;
         }
         else{
-            System.out.println("Hatalı Seçim!");
+            System.out.println("\nHatalı Seçim!");
             System.out.println("Ana Menüye Yönlendiriliyorsunuz...");
             answer = 1;
         }

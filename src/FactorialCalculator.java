@@ -10,7 +10,7 @@ public class FactorialCalculator {
         {
             factorial = factorial * i;
         }
-        System.out.println("Sonuç: " + factorial);
+        System.out.println("Sonuç: " + factorial + "\n");
     }
 
 }
