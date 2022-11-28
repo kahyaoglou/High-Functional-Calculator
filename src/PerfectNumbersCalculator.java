@@ -4,7 +4,7 @@ public class PerfectNumbersCalculator {
     int perfectNum, i=1, total = 0;
 
     public void PerfectNumberCalculate(){
-        System.out.print("Sayıyı Giriniz: ");
+        System.out.print("\nSayıyı Giriniz: ");
         perfectNum = input.nextInt();
 
         do {
@@ -20,10 +20,10 @@ public class PerfectNumbersCalculator {
         while(i <= perfectNum);
         if (total == perfectNum)
         {
-            System.out.println(perfectNum + " Mükemmel Sayıdır!");
+            System.out.println(perfectNum + " Mükemmel Sayıdır!\n");
         }
         else {
-            System.out.println(perfectNum + " Mükemmel Sayı Değildir.");
+            System.out.println(perfectNum + " Mükemmel Sayı Değildir.\n");
         }
     }
 }

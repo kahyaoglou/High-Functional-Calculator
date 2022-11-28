@@ -3,12 +3,13 @@ public class GcdLcmCalculator {
     Scanner input = new Scanner(System.in);
     int num1, num2;
     public int GcdLcmMenu(){
-        System.out.println("EBOB(1) / EKOK(2) / Çıkış(0)");
+        System.out.println("\nEBOB(1) / EKOK(2) / Çıkış(0)");
         System.out.print("Hangi Hesaplamayı Yapalım?: ");
         return input.nextInt();
 
     }
     public void GCDCalculator() {
+        System.out.println("\nEBOB...");
         System.out.print("İlk Sayıyı Giriniz: ");
         num1 = input.nextInt();
         System.out.print("İkinci Sayıyı Giriniz: ");
@@ -20,11 +21,11 @@ public class GcdLcmCalculator {
             }
             i++;
         }
-        System.out.println();
-        System.out.println(num1 + " ve " + num2 + "'nin EBOB'u: " + gcd);
+        System.out.println(num1 + " ve " + num2 + "'nin EBOB'u: " + gcd +"\n");
     }
 
     public void LCMCalculator(){
+        System.out.println("\nEKOK...");
         System.out.print("İlk Sayıyı Giriniz: ");
         num1 = input.nextInt();
         System.out.print("İkinci Sayıyı Giriniz: ");
@@ -38,7 +39,6 @@ public class GcdLcmCalculator {
             }
             i++;
         }
-        System.out.println();
-        System.out.println(num1 + " ve " + num2 + "'nin EKOK'u: " + lcm);
+        System.out.println(num1 + " ve " + num2 + "'nin EKOK'u: " + lcm +"\n");
     }
 }

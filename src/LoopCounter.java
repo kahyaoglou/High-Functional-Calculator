@@ -5,8 +5,7 @@ public class LoopCounter {
 
     public void LoopCount(){
         System.out.println("İşleme Devam Edelim mi?");
-        System.out.println("Evet(1) / Hayır(2)");
-        System.out.println();
+        System.out.print("Evet(1) / Hayır(2): ");
         answer = input.nextInt();
 
         if(answer == 1) {

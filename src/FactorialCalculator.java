@@ -4,7 +4,7 @@ public class FactorialCalculator {
     int factorial = 1;
     public void Factorial()
     {
-        System.out.print("Hangi Sayının Faktöriyelini Alalım?:  ");
+        System.out.print("\nHangi Sayının Faktöriyelini Alalım?:  ");
         int num = input.nextInt();
         for (int i = 1; i <= num; i++)
         {

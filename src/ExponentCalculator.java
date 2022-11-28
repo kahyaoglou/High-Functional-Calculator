@@ -4,7 +4,7 @@ public class ExponentCalculator {
     float finalExponent=1;
     public void exponent()
     {
-        System.out.print("Taban Değerini Giriniz: ");
+        System.out.print("\nTaban Değerini Giriniz: ");
         double base = input.nextDouble();
         System.out.print("Üs Değerini Giriniz: ");
         double power = input.nextDouble();

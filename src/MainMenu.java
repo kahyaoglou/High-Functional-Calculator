@@ -25,6 +25,6 @@ public class MainMenu {
         System.out.println("Lütfen Tekrar Deneyiniz...");
     }
     public void exitMessage(){
-        System.out.println("Çıkış Yapılıyor...");
+        System.out.println("\nÇıkış Yapılıyor...");
     }
 }

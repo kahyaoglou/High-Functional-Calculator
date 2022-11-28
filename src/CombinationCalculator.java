@@ -6,7 +6,7 @@ public class CombinationCalculator {
 
     public void Combination()
     {
-        System.out.print("Kümemiz Kaç Elemanlı?: ");
+        System.out.print("\nKümemiz Kaç Elemanlı?: ");
         int group = input.nextInt();
         System.out.print("Oluşacak Küme Kaç Elemanlı Olsun?: ");
         int littleGroup = input.nextInt();
@@ -22,6 +22,6 @@ public class CombinationCalculator {
             finalFactorial = finalFactorial*k;
         }
         combination = groupFactorial / (littleGroupFactorial*finalFactorial);
-        System.out.println("Sonuc: " + combination);
+        System.out.println("Sonuc: " + combination +"\n");
     }
 }

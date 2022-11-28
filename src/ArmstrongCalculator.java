@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class ArmstrongCalculator {
     public void NarcissisticNumbersCalculate(){
         Scanner input = new Scanner(System.in);
-        System.out.print("Please enter the number: ");
+        System.out.print("\nSayıyı Giriniz: ");
 
         int number = input.nextInt();
         int basamakNumber = 0; //Basamak sayısı.
@@ -47,11 +47,11 @@ public class ArmstrongCalculator {
 
         if (result == number)
         {
-            System.out.println(number + " sayısı bir Armstrong sayıdır.");
+            System.out.println(number + " sayısı bir Armstrong sayıdır.\n");
         }
         else
         {
-            System.out.println(number + " sayısı bir Armstrong sayı değildir.");
+            System.out.println(number + " sayısı bir Armstrong sayı değildir.\n");
         }
     }
 }
