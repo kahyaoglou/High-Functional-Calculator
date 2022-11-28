@@ -1,7 +1,7 @@
 public class MainMenu {
     public void showMenu(){
-        System.out.println("    KUB-HIGH FUNCTIONAL CALCULATOR    ");
-        System.out.println("**************************************");
+        System.out.println("    HIGH FUNCTIONAL CALCULATOR    ");
+        System.out.println("**********************************");
         System.out.println("1- Temel Aritmetik İşlemleri");
         System.out.println("2- Üs Alma");
         System.out.println("3- Karekök Alma");
@@ -26,5 +26,6 @@ public class MainMenu {
     }
     public void exitMessage(){
         System.out.println("\nÇıkış Yapılıyor...");
+        System.out.print("Copyright © 2022 by boa");
     }
 }
