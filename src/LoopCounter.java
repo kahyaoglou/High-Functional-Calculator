@@ -3,7 +3,7 @@ public class LoopCounter {
     Scanner input = new Scanner(System.in);
     int answer;
 
-    public int LoopCounter(){
+    public int LoopCount(){
         System.out.println("İşleme Devam Edelim mi?");
         System.out.println("Evet(1) / Hayır(2)");
         answer = input.nextInt();

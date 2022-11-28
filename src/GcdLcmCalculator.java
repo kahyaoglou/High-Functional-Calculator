@@ -1,12 +1,11 @@
 import java.util.Scanner;
 public class GcdLcmCalculator {
     Scanner input = new Scanner(System.in);
-    int num1, num2, secim;
+    int num1, num2;
     public int GcdLcmMenu(){
         System.out.print("Hangi Hesaplamayı Yapalım?: ");
         System.out.println("EBOB(1) / EKOK(2)");
-        secim = input.nextInt();
-        return secim;
+        return input.nextInt();
 
     }
     public void GCDCalculator() {

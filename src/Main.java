@@ -36,7 +36,7 @@ public class Main {
                             main.errorMessage();
                         }
 
-                        loopCounter.LoopCounter();
+                        loopCounter.LoopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -45,7 +45,7 @@ public class Main {
                     do {
                         ExponentCalculator result2 = new ExponentCalculator();
                         result2.exponent();
-                        loopCounter.LoopCounter();
+                        loopCounter.LoopCount();
                     }
                     while (loopCounter.answer <= 0);
                     break;
@@ -53,8 +53,8 @@ public class Main {
                 case 3:
                     do {
                         RootCalculator rootCalculator = new RootCalculator();
-                        rootCalculator.RootCalculator();
-                        loopCounter.LoopCounter();
+                        rootCalculator.RootCalculate();
+                        loopCounter.LoopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -63,7 +63,7 @@ public class Main {
                     do {
                         FactorialCalculator factorialCalculator = new FactorialCalculator();
                         factorialCalculator.Factorial();
-                        loopCounter.LoopCounter();
+                        loopCounter.LoopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -72,7 +72,7 @@ public class Main {
                     do {
                         CombinationCalculator combinationCalculator = new CombinationCalculator();
                         combinationCalculator.Combination();
-                        loopCounter.LoopCounter();
+                        loopCounter.LoopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -81,7 +81,7 @@ public class Main {
                     do{
                         PrimeNumberCalculator primeNumberCalculator = new PrimeNumberCalculator();
                         primeNumberCalculator.PrimeNumberCalculate();
-                        loopCounter.LoopCounter();
+                        loopCounter.LoopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -101,7 +101,7 @@ public class Main {
                             main.errorMessage();
                         }
 
-                        loopCounter.LoopCounter();
+                        loopCounter.LoopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -124,7 +124,7 @@ public class Main {
                         else {
                             main.errorMessage();
                         }
-                        loopCounter.LoopCounter();
+                        loopCounter.LoopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -152,7 +152,7 @@ public class Main {
                         else{
                             main.errorMessage();
                         }
-                        loopCounter.LoopCounter();
+                        loopCounter.LoopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -161,7 +161,7 @@ public class Main {
                     do {
                         ArmstrongCalculator armstrongCalculator = new ArmstrongCalculator();
                         armstrongCalculator.ArmstrongCalculate();
-                        loopCounter.LoopCounter();
+                        loopCounter.LoopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;

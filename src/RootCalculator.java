@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class RootCalculator {
     Scanner input = new Scanner(System.in);
     double finalRoot;
-    public void RootCalculator() {
+    public void RootCalculate() {
         System.out.print("Kök Değerini Giriniz: ");
         double root = input.nextDouble();
         System.out.print("Kaçıncı Dereceden Kök Alınacak?: ");
