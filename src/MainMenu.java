@@ -2,7 +2,6 @@ public class MainMenu {
     public void mainMenuChoose(){
         System.out.println("    HIGH FUNCTIONAL CALCULATOR    ");
         System.out.println("**********************************");
-        System.out.println("0- Çıkış");
         System.out.println("1- Temel Aritmetik İşlemleri");
         System.out.println("2- Üs Alma");
         System.out.println("3- Karekök Alma");
@@ -14,6 +13,7 @@ public class MainMenu {
         System.out.println("9- Üçgende Alan Hesaplama");
         System.out.println("10- Armstrong Sayıları Hesaplama");
         System.out.println("11- Mükemmel Sayıları Hesaplama");
+        System.out.println("0- Çıkış");
         System.out.print("Lütfen Yapılacak İşlemi Seçiniz: ");
     }
 

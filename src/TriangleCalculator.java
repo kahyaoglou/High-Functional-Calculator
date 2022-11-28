@@ -5,12 +5,12 @@ public class TriangleCalculator {
     int u, r, yukseklik, kenar1, kenar2, kenar3;
 
     public int TriangleCalculatorMenu(){
-        System.out.println("0- Çıkış");
         System.out.println("1- Eşkenar Üçgenin Alanı");
         System.out.println("2- Bir Kenarı ve Bu Kenarın Yükseklik Ölçüsü Bilinen Üçgenin Alanı");
         System.out.println("3- Üç Kenarının Uzunluğu Bilinen Üçgenin Alanı");
         System.out.println("4- İç Teğet Çemberinin Yarıçapı ve Çevresinin Uzunluğu Bilinen Üçgenin Alanı");
         System.out.println("5- Çevrel Çemberinin Yarıçapının Uzunluğu Bilinen Üçgenin Alanı");
+        System.out.println("0- Çıkış");
         System.out.print("Yapılacak İşlemi Seçiniz: ");
         return input.nextInt();
     }

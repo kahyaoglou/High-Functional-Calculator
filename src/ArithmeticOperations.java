@@ -3,12 +3,12 @@ public class ArithmeticOperations {
     double toplam, fark, carpim, bolum;
     Scanner input = new Scanner(System.in);
     public int ArithmeticMenu(){
-        System.out.println("Yapılacak Aritmetik İşlemi Seçiniz:");
-        System.out.println("0- Çıkış");
         System.out.println("1- Toplama");
         System.out.println("2- Çıkarma");
         System.out.println("3- Çarpma");
         System.out.println("4- Bölme");
+        System.out.println("0- Çıkış");
+        System.out.print("Yapılacak Aritmetik İşlemi Seçiniz: ");
         return input.nextInt();
     }
 

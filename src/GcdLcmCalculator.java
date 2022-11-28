@@ -3,8 +3,8 @@ public class GcdLcmCalculator {
     Scanner input = new Scanner(System.in);
     int num1, num2;
     public int GcdLcmMenu(){
-        System.out.print("Hangi Hesaplamayı Yapalım?: ");
         System.out.println("EBOB(1) / EKOK(2) / Çıkış(0)");
+        System.out.print("Hangi Hesaplamayı Yapalım?: ");
         return input.nextInt();
 
     }
