@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class GcdLcmCalculator {
     Scanner input = new Scanner(System.in);
     int num1, num2;
-    public int gcdLcmMenu(){
+    public int showMenu(){
         System.out.println("\nEBOB(1) / EKOK(2) / Çıkış(0)");
         System.out.print("Hangi Hesaplamayı Yapalım?: ");
         return input.nextInt();

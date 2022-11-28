@@ -1,5 +1,5 @@
 public class MainMenu {
-    public void mainMenuChoose(){
+    public void showMenu(){
         System.out.println("    HIGH FUNCTIONAL CALCULATOR    ");
         System.out.println("**********************************");
         System.out.println("1- Temel Aritmetik İşlemleri");

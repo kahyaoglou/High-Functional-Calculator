@@ -4,7 +4,7 @@ public class TriangleCalculator {
     double alan;
     int u, r, yukseklik, kenar1, kenar2, kenar3;
 
-    public int triangleCalculatorMenu(){
+    public int showMenu(){
         System.out.println("\n1- Eşkenar Üçgenin Alanı");
         System.out.println("2- Bir Kenarı ve Bu Kenarın Yükseklik Ölçüsü Bilinen Üçgenin Alanı");
         System.out.println("3- Üç Kenarının Uzunluğu Bilinen Üçgenin Alanı");

@@ -5,7 +5,7 @@ public class CircleCalculator {
     int r, a;
     final double pi = 3.14;
 
-    public int circleCalculatorMenu(){
+    public int showMenu(){
         System.out.println("\n- Daire Çevre(1)");
         System.out.println("- Daire Alan(2)");
         System.out.println("- Merkez Açılı Dairede Alan(3)");

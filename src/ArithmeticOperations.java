@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class ArithmeticOperations {
     double toplam, fark, carpim, bolum;
     Scanner input = new Scanner(System.in);
-    public int arithmeticMenu(){
+    public int showMenu(){
         System.out.println("\n1- Toplama");
         System.out.println("2- Çıkarma");
         System.out.println("3- Çarpma");

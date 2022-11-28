@@ -8,7 +8,7 @@ public class Main {
             MainMenu main = new MainMenu();
             LoopCounter loopCounter = new LoopCounter();
 
-            main.mainMenuChoose();
+            main.showMenu();
             secim = input.nextInt();
 
             switch(secim){
@@ -20,7 +20,7 @@ public class Main {
                     int chooseArithmetic;
                     ArithmeticOperations arithmeticOperations = new ArithmeticOperations();
                     do {
-                        chooseArithmetic = arithmeticOperations.arithmeticMenu();
+                        chooseArithmetic = arithmeticOperations.showMenu();
                         if(chooseArithmetic == 0){
                             break;
                         }
@@ -94,7 +94,7 @@ public class Main {
                     int chooseGcdLcm;
                     GcdLcmCalculator gcdLcmObject = new GcdLcmCalculator();
                     do {
-                        chooseGcdLcm = gcdLcmObject.gcdLcmMenu();
+                        chooseGcdLcm = gcdLcmObject.showMenu();
 
                         if(chooseGcdLcm == 0){
                             break;
@@ -117,7 +117,7 @@ public class Main {
                 case 8:
                     do {
                         CircleCalculator circleCalculator = new CircleCalculator();
-                        int chooseCircleOperations = circleCalculator.circleCalculatorMenu();
+                        int chooseCircleOperations = circleCalculator.showMenu();
 
                         if(chooseCircleOperations == 0){
                             break;
@@ -144,7 +144,7 @@ public class Main {
                     int chooseTriangle;
                     TriangleCalculator triangleCalculator = new TriangleCalculator();
                     do {
-                        chooseTriangle = triangleCalculator.triangleCalculatorMenu();
+                        chooseTriangle = triangleCalculator.showMenu();
                         if(chooseTriangle == 0){
                             break;
                         }
