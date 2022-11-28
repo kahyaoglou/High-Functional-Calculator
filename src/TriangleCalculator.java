@@ -18,8 +18,14 @@ public class TriangleCalculator {
     public void EquilateralTriangleArea(){
         System.out.print("Bir Kenarının Uzunluğunu Giriniz: ");
         kenar1 = input.nextInt();
-        alan = (kenar1 * kenar1 * Math.sqrt(3)) / 4;
-        System.out.println("Alan = " + alan);
+        if (kenar1 > 0) {
+            alan = (kenar1 * kenar1 * Math.sqrt(3)) / 4;
+            System.out.println("Alan = " + alan);
+        }
+        else{
+            System.out.print("Kenar Uzunluğu 0 veya 0'dan Küçük Olamaz!");
+        }
+
     }
 
     public void HeightAreaCalculator(){
@@ -27,8 +33,13 @@ public class TriangleCalculator {
         kenar1 = input.nextInt();
         System.out.print("Bu Kenara Ait Yüksekliği Giriniz: ");
         yukseklik = input.nextInt();
-        alan = (kenar1 * yukseklik) / 2;
-        System.out.println("Alan = " +alan);
+        if(kenar1 > 0 || yukseklik > 0){
+            alan = (kenar1 * yukseklik) / 2;
+            System.out.println("Alan = " +alan);
+        }
+        else{
+            System.out.print("Kenar Uzunluğu veya Yükseklik, 0 veya 0'dan Küçük Olamaz!");
+        }
     }
 
     public void HeronAreaCalculator(){
@@ -39,11 +50,14 @@ public class TriangleCalculator {
         System.out.print("Üçüncü Kenarın Uzunluğunu Giriniz: ");
         kenar3 = input.nextInt();
 
-        u = (kenar1+kenar2+kenar3) / 2;
-        alan = Math.sqrt((u*(u-kenar1)*(u-kenar2)*(u-kenar3)));
-        System.out.println("Alan: "+alan);
-        if (alan <= 0)
-            System.out.println("Bu kenar ölçüleriyle üçgen oluşturulamaz!");
+        if (kenar1 > 0 || kenar2 > 0 || kenar3 > 0) {
+            u = (kenar1+kenar2+kenar3) / 2;
+            alan = Math.sqrt((u*(u-kenar1)*(u-kenar2)*(u-kenar3)));
+            System.out.println("Alan: "+alan);
+        }
+        else{
+            System.out.print("Kenar Uzunluğu 0 veya 0'dan Küçük Olamaz!");
+        }
     }
 
     public void TangentCircleAreaCalculator(){
@@ -55,9 +69,15 @@ public class TriangleCalculator {
         kenar3 = input.nextInt();
         System.out.print("İç Teğet Çemberi Yarı Çapını Giriniz: ");
         r  = input.nextInt();
-        u = kenar1/2 + kenar2/2 + kenar3/2;
-        alan = u * r;
-        System.out.println("Alan = " +alan);
+        if (kenar1 > 0 || kenar2 > 0 || kenar3 > 0 || r > 0){
+            u = (kenar1 + kenar2 + kenar3)/2;
+            alan = u * r;
+            System.out.println("Alan = " +alan);
+        }
+        else{
+            System.out.print("Kenar Uzunluğu veya Yarı Çap, 0 veya 0'dan Küçük Olamaz!");
+        }
+
     }
 
     public void CircumCircleAreaCalculator(){
@@ -70,7 +90,12 @@ public class TriangleCalculator {
         System.out.print("Çevrel Çemberin Yarıçapını Giriniz: ");
         r = input.nextInt();
 
-        alan = (kenar1 * kenar2 * kenar3) / (r*4);
-        System.out.println("Alan = " +alan);
+        if (kenar1 > 0 || kenar2 > 0 || kenar3 > 0 || r > 0){
+            alan = (kenar1 * kenar2 * kenar3) / (4 * r);
+            System.out.println("Alan = " +alan);
+        }
+        else{
+            System.out.print("Kenar Uzunluğu veya Yarı Çap, 0 veya 0'dan Küçük Olamaz!");
+        }
     }
 }

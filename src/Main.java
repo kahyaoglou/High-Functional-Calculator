@@ -29,6 +29,9 @@ public class Main {
                         else if (chooseArithmetic == 4){
                             arithmeticOperations.Bolum();
                         }
+                        else if(chooseArithmetic == 5){
+                            break;
+                        }
                         else{
                             main.errorMessage();
                         }
