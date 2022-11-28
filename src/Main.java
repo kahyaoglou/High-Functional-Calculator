@@ -12,6 +12,10 @@ public class Main {
             secim = input.nextInt();
 
             switch(secim){
+                case 0:
+                    mainAnswer++;
+                    main.exitMessage();
+                    break;
                 case 1:
                     int chooseArithmetic;
                     ArithmeticOperations arithmeticOperations = new ArithmeticOperations();
@@ -176,11 +180,15 @@ public class Main {
                     break;
 
                 case 11:
-                    mainAnswer++;
-                    main.exitMessage();
+                    do {
+                        PerfectNumbersCalculator perfectNumbersCalculator = new PerfectNumbersCalculator();
+                        perfectNumbersCalculator.PerfectNumberCalculate();
+                        loopCounter.LoopCount();
+                    }
+                    while(loopCounter.answer <= 0);
                     break;
 
-                default :
+                default:
                     main.errorMessageLoop();
             }
             System.out.println();
