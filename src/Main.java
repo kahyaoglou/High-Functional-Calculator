@@ -21,7 +21,10 @@ public class Main {
                     ArithmeticOperations arithmeticOperations = new ArithmeticOperations();
                     do {
                         chooseArithmetic = arithmeticOperations.ArithmeticMenu();
-                        if (chooseArithmetic == 1) {
+                        if(chooseArithmetic == 0){
+                            break;
+                        }
+                        else if (chooseArithmetic == 1) {
                             arithmeticOperations.Toplam();
                         }
                         else if(chooseArithmetic == 2){
@@ -32,9 +35,6 @@ public class Main {
                         }
                         else if (chooseArithmetic == 4){
                             arithmeticOperations.Bolum();
-                        }
-                        else if(chooseArithmetic == 5){
-                            break;
                         }
                         else{
                             main.errorMessage();
@@ -95,14 +95,15 @@ public class Main {
                     GcdLcmCalculator gcdLcmObject = new GcdLcmCalculator();
                     do {
                         chooseGcdLcm = gcdLcmObject.GcdLcmMenu();
-                        if (chooseGcdLcm == 1){
+
+                        if(chooseGcdLcm == 0){
+                            break;
+                        }
+                        else if (chooseGcdLcm == 1){
                             gcdLcmObject.GCDCalculator();
                         }
                         else if(chooseGcdLcm == 2){
                             gcdLcmObject.LCMCalculator();
-                        }
-                        else if(chooseGcdLcm == 3){
-                            break;
                         }
                         else{
                             main.errorMessage();
@@ -118,7 +119,10 @@ public class Main {
                         CircleCalculator circleCalculator = new CircleCalculator();
                         int chooseCircleOperations = circleCalculator.circleCalculatorMenu();
 
-                        if(chooseCircleOperations == 1){
+                        if(chooseCircleOperations == 0){
+                            break;
+                        }
+                        else if(chooseCircleOperations == 1){
                             circleCalculator.circumferenceCalculator();
                         }
                         else if(chooseCircleOperations == 2){
@@ -127,9 +131,6 @@ public class Main {
                         else if(chooseCircleOperations == 3)
                         {
                             circleCalculator.centralAngleAreaCalculator();
-                        }
-                        else if(chooseCircleOperations == 4){
-                            break;
                         }
                         else {
                             main.errorMessage();
@@ -144,7 +145,10 @@ public class Main {
                     TriangleCalculator triangleCalculator = new TriangleCalculator();
                     do {
                         chooseTriangle = triangleCalculator.TriangleCalculatorMenu();
-                        if(chooseTriangle == 1){
+                        if(chooseTriangle == 0){
+                            break;
+                        }
+                        else if(chooseTriangle == 1){
                             triangleCalculator.EquilateralTriangleArea();
                         }
                         else if(chooseTriangle == 2){
@@ -158,9 +162,6 @@ public class Main {
                         }
                         else if(chooseTriangle == 5){
                             triangleCalculator.CircumCircleAreaCalculator();
-                        }
-                        else if(chooseTriangle == 6){
-                            break;
                         }
                         else{
                             main.errorMessage();

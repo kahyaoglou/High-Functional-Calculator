@@ -6,11 +6,11 @@ public class CircleCalculator {
     final double pi = 3.14;
 
     public int circleCalculatorMenu(){
-        System.out.println("Hangi İşlemi Yapalım?");
+        System.out.println("- Çıkış(0):");
         System.out.println("- Daire Çevre(1)");
         System.out.println("- Daire Alan(2)");
         System.out.println("- Merkez Açılı Dairede Alan(3)");
-        System.out.print("- Çıkış(4): ");
+        System.out.print("Hangi İşlemi Yapalım?: ");
         return input.nextInt();
     }
     public void circumferenceCalculator(){
