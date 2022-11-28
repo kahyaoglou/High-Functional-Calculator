@@ -18,4 +18,11 @@ public class MainMenu {
     public void errorMessage(){
         System.out.println("Hatalı Seçim Yaptınız!");
     }
+    public void errorMessageLoop(){
+        System.out.println("Hatalı Seçim Yaptınız!");
+        System.out.println("Lütfen Tekrar Deneyiniz...");
+    }
+    public void exitMessage(){
+        System.out.println("Çıkış Yapılıyor...");
+    }
 }

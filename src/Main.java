@@ -97,6 +97,9 @@ public class Main {
                         else if(chooseGcdLcm == 2){
                             gcdLcmObject.LCMCalculator();
                         }
+                        else if(chooseGcdLcm == 3){
+                            break;
+                        }
                         else{
                             main.errorMessage();
                         }
@@ -120,6 +123,9 @@ public class Main {
                         else if(chooseCircleOperations == 3)
                         {
                             circleCalculator.centralAngleAreaCalculator();
+                        }
+                        else if(chooseCircleOperations == 4){
+                            break;
                         }
                         else {
                             main.errorMessage();
@@ -146,8 +152,11 @@ public class Main {
                         else if(chooseTriangle == 4){
                             triangleCalculator.TangentCircleAreaCalculator();
                         }
-                        else if(chooseTriangle ==5){
+                        else if(chooseTriangle == 5){
                             triangleCalculator.CircumCircleAreaCalculator();
+                        }
+                        else if(chooseTriangle == 6){
+                            break;
                         }
                         else{
                             main.errorMessage();
@@ -168,12 +177,11 @@ public class Main {
 
                 case 11:
                     mainAnswer++;
-                    System.out.println("Çıkış Yapılıyor...");
+                    main.exitMessage();
                     break;
 
                 default :
-                    System.out.println("Yanlış Seçim Yaptınız!");
-                    System.out.println("Lütfen Tekrar Deneyiniz...");
+                    main.errorMessageLoop();
             }
             System.out.println();
         }

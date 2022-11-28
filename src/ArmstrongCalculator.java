@@ -37,10 +37,12 @@ public class ArmstrongCalculator {
         if (result == armstrongNumber)
         {
             System.out.println(armstrongNumber + " sayısı bir Armstrong sayıdır.");
+            System.out.println();
         }
         else
         {
             System.out.println(armstrongNumber + " sayısı bir Armstrong sayı değildir.");
+            System.out.println();
         }
     }
 

@@ -9,7 +9,8 @@ public class CircleCalculator {
         System.out.println("Hangi İşlemi Yapalım?");
         System.out.println("- Daire Çevre(1)");
         System.out.println("- Daire Alan(2)");
-        System.out.print("- Merkez Açılı Dairede Alan(3): ");
+        System.out.println("- Merkez Açılı Dairede Alan(3)");
+        System.out.print("Çıkış(4): ");
         return input.nextInt();
     }
     public void circumferenceCalculator(){
@@ -17,6 +18,7 @@ public class CircleCalculator {
         r = input.nextInt();
         cevre = 2 * pi * r;
         System.out.println("Çevre: " + cevre);
+        System.out.println();
     }
 
     public void areaCalculator(){
@@ -24,6 +26,7 @@ public class CircleCalculator {
         r = input.nextInt();
         alan = pi * r * r;
         System.out.println("Alan: " + alan);
+        System.out.println();
     }
 
     public void centralAngleAreaCalculator(){
@@ -34,9 +37,11 @@ public class CircleCalculator {
         if (a >=0 && a <= 360){
             aciAlan = (pi * (r * r) * a)/360;
             System.out.println("Merkez Açılı Alan: " + aciAlan);
+            System.out.println();
         }
         else{
             System.out.println("Merkez açı 0 ile 360 derece arasında olmalıdır!");
+            System.out.println();
         }
     }
 }

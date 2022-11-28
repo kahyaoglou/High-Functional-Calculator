@@ -3,11 +3,12 @@ public class ArithmeticOperations {
     double toplam, fark, carpim, bolum;
     Scanner input = new Scanner(System.in);
     public int ArithmeticMenu(){
-        System.out.println("Yapilacak Aritmetik İşlemi Seçiniz:");
+        System.out.println("Yapılacak Aritmetik İşlemi Seçiniz:");
         System.out.println("1- Toplama");
         System.out.println("2- Çıkarma");
         System.out.println("3- Çarpma");
         System.out.println("4- Bölme");
+        System.out.println("5- Çıkış");
         return input.nextInt();
     }
 
@@ -18,6 +19,7 @@ public class ArithmeticOperations {
         double secondTop = input.nextDouble();
         toplam = (firstTop + secondTop);
         System.out.println("Sonuç: " + toplam);
+        System.out.println();
     }
 
     public void Fark(){
@@ -27,6 +29,7 @@ public class ArithmeticOperations {
         double secondCik = input.nextDouble();
         fark = firstCik-secondCik;
         System.out.println("Sonuç: " + fark);
+        System.out.println();
     }
 
     public void Carpim() {
@@ -36,6 +39,7 @@ public class ArithmeticOperations {
         double secondCar = input.nextDouble();
         carpim = firstCar * secondCar;
         System.out.println("Sonuç: " + carpim);
+        System.out.println();
     }
 
     public void Bolum(){
@@ -45,5 +49,6 @@ public class ArithmeticOperations {
         double secondBol = input.nextDouble();
         bolum = firstBol / secondBol;
         System.out.println("Sonuç: " + bolum);
+        System.out.println();
     }
 }

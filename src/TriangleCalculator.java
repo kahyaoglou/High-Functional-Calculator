@@ -11,6 +11,7 @@ public class TriangleCalculator {
         System.out.println("3- Üç Kenarının Uzunluğu Bilinen Üçgenin Alanı");
         System.out.println("4- İç Teğet Çemberinin Yarıçapı ve Çevresinin Uzunluğu Bilinen Üçgenin Alanı");
         System.out.println("5- Çevrel Çemberinin Yarıçapının Uzunluğu Bilinen Üçgenin Alanı");
+        System.out.println("6- Çıkış");
         return input.nextInt();
     }
 
