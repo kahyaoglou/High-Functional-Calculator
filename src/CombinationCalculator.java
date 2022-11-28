@@ -4,7 +4,7 @@ public class CombinationCalculator {
     int combination, finalFactorial = 1;
     int groupFactorial = 1, littleGroupFactorial=1;
 
-    public void Combination()
+    public void combination()
     {
         System.out.print("\nKümemiz Kaç Elemanlı?: ");
         int group = input.nextInt();

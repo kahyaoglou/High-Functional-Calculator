@@ -2,13 +2,13 @@ import java.util.Scanner;
 public class GcdLcmCalculator {
     Scanner input = new Scanner(System.in);
     int num1, num2;
-    public int GcdLcmMenu(){
+    public int gcdLcmMenu(){
         System.out.println("\nEBOB(1) / EKOK(2) / Çıkış(0)");
         System.out.print("Hangi Hesaplamayı Yapalım?: ");
         return input.nextInt();
 
     }
-    public void GCDCalculator() {
+    public void gcdCalculator() {
         System.out.println("\nEBOB...");
         System.out.print("İlk Sayıyı Giriniz: ");
         num1 = input.nextInt();
@@ -24,7 +24,7 @@ public class GcdLcmCalculator {
         System.out.println(num1 + " ve " + num2 + "'nin EBOB'u: " + gcd +"\n");
     }
 
-    public void LCMCalculator(){
+    public void lcmCalculator(){
         System.out.println("\nEKOK...");
         System.out.print("İlk Sayıyı Giriniz: ");
         num1 = input.nextInt();

@@ -3,7 +3,7 @@ public class PerfectNumbersCalculator {
     Scanner input = new Scanner(System.in);
     int perfectNum, i=1, total = 0;
 
-    public void PerfectNumberCalculate(){
+    public void perfectNumberCalculate(){
         System.out.print("\nSayıyı Giriniz: ");
         perfectNum = input.nextInt();
 

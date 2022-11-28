@@ -20,27 +20,27 @@ public class Main {
                     int chooseArithmetic;
                     ArithmeticOperations arithmeticOperations = new ArithmeticOperations();
                     do {
-                        chooseArithmetic = arithmeticOperations.ArithmeticMenu();
+                        chooseArithmetic = arithmeticOperations.arithmeticMenu();
                         if(chooseArithmetic == 0){
                             break;
                         }
                         else if (chooseArithmetic == 1) {
-                            arithmeticOperations.Toplam();
+                            arithmeticOperations.toplam();
                         }
                         else if(chooseArithmetic == 2){
-                            arithmeticOperations.Fark();
+                            arithmeticOperations.fark();
                         }
                         else if(chooseArithmetic == 3){
-                            arithmeticOperations.Carpim();
+                            arithmeticOperations.carpim();
                         }
                         else if (chooseArithmetic == 4){
-                            arithmeticOperations.Bolum();
+                            arithmeticOperations.bolum();
                         }
                         else{
                             main.errorMessage();
                         }
 
-                        loopCounter.LoopCount();
+                        loopCounter.loopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -49,7 +49,7 @@ public class Main {
                     do {
                         ExponentCalculator result2 = new ExponentCalculator();
                         result2.exponent();
-                        loopCounter.LoopCount();
+                        loopCounter.loopCount();
                     }
                     while (loopCounter.answer <= 0);
                     break;
@@ -57,8 +57,8 @@ public class Main {
                 case 3:
                     do {
                         RootCalculator rootCalculator = new RootCalculator();
-                        rootCalculator.RootCalculate();
-                        loopCounter.LoopCount();
+                        rootCalculator.rootCalculate();
+                        loopCounter.loopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -66,8 +66,8 @@ public class Main {
                 case 4:
                     do {
                         FactorialCalculator factorialCalculator = new FactorialCalculator();
-                        factorialCalculator.Factorial();
-                        loopCounter.LoopCount();
+                        factorialCalculator.factorial();
+                        loopCounter.loopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -75,8 +75,8 @@ public class Main {
                 case 5:
                     do {
                         CombinationCalculator combinationCalculator = new CombinationCalculator();
-                        combinationCalculator.Combination();
-                        loopCounter.LoopCount();
+                        combinationCalculator.combination();
+                        loopCounter.loopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -84,8 +84,8 @@ public class Main {
                 case 6:
                     do{
                         PrimeNumberCalculator primeNumberCalculator = new PrimeNumberCalculator();
-                        primeNumberCalculator.PrimeNumberCalculate();
-                        loopCounter.LoopCount();
+                        primeNumberCalculator.primeNumberCalculate();
+                        loopCounter.loopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -94,22 +94,22 @@ public class Main {
                     int chooseGcdLcm;
                     GcdLcmCalculator gcdLcmObject = new GcdLcmCalculator();
                     do {
-                        chooseGcdLcm = gcdLcmObject.GcdLcmMenu();
+                        chooseGcdLcm = gcdLcmObject.gcdLcmMenu();
 
                         if(chooseGcdLcm == 0){
                             break;
                         }
                         else if (chooseGcdLcm == 1){
-                            gcdLcmObject.GCDCalculator();
+                            gcdLcmObject.gcdCalculator();
                         }
                         else if(chooseGcdLcm == 2){
-                            gcdLcmObject.LCMCalculator();
+                            gcdLcmObject.lcmCalculator();
                         }
                         else{
                             main.errorMessage();
                         }
 
-                        loopCounter.LoopCount();
+                        loopCounter.loopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -135,7 +135,7 @@ public class Main {
                         else {
                             main.errorMessage();
                         }
-                        loopCounter.LoopCount();
+                        loopCounter.loopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -144,29 +144,29 @@ public class Main {
                     int chooseTriangle;
                     TriangleCalculator triangleCalculator = new TriangleCalculator();
                     do {
-                        chooseTriangle = triangleCalculator.TriangleCalculatorMenu();
+                        chooseTriangle = triangleCalculator.triangleCalculatorMenu();
                         if(chooseTriangle == 0){
                             break;
                         }
                         else if(chooseTriangle == 1){
-                            triangleCalculator.EquilateralTriangleArea();
+                            triangleCalculator.equilateralTriangleArea();
                         }
                         else if(chooseTriangle == 2){
-                            triangleCalculator.HeightAreaCalculator();
+                            triangleCalculator.heightAreaCalculator();
                         }
                         else if(chooseTriangle == 3){
-                            triangleCalculator.HeronAreaCalculator();
+                            triangleCalculator.heronAreaCalculator();
                         }
                         else if(chooseTriangle == 4){
-                            triangleCalculator.TangentCircleAreaCalculator();
+                            triangleCalculator.tangentCircleAreaCalculator();
                         }
                         else if(chooseTriangle == 5){
-                            triangleCalculator.CircumCircleAreaCalculator();
+                            triangleCalculator.circumCircleAreaCalculator();
                         }
                         else{
                             main.errorMessage();
                         }
-                        loopCounter.LoopCount();
+                        loopCounter.loopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -174,8 +174,8 @@ public class Main {
                 case 10:
                     do {
                         ArmstrongCalculator armstrongCalculator = new ArmstrongCalculator();
-                        armstrongCalculator.NarcissisticNumbersCalculate();
-                        loopCounter.LoopCount();
+                        armstrongCalculator.narcissisticNumbersCalculate();
+                        loopCounter.loopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;
@@ -183,8 +183,8 @@ public class Main {
                 case 11:
                     do {
                         PerfectNumbersCalculator perfectNumbersCalculator = new PerfectNumbersCalculator();
-                        perfectNumbersCalculator.PerfectNumberCalculate();
-                        loopCounter.LoopCount();
+                        perfectNumbersCalculator.perfectNumberCalculate();
+                        loopCounter.loopCount();
                     }
                     while(loopCounter.answer <= 0);
                     break;

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class ArmstrongCalculator {
-    public void NarcissisticNumbersCalculate(){
+    public void narcissisticNumbersCalculate(){
         Scanner input = new Scanner(System.in);
         System.out.print("\nSayıyı Giriniz: ");
 

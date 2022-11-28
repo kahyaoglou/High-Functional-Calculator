@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class ArithmeticOperations {
     double toplam, fark, carpim, bolum;
     Scanner input = new Scanner(System.in);
-    public int ArithmeticMenu(){
+    public int arithmeticMenu(){
         System.out.println("\n1- Toplama");
         System.out.println("2- Çıkarma");
         System.out.println("3- Çarpma");
@@ -12,7 +12,7 @@ public class ArithmeticOperations {
         return input.nextInt();
     }
 
-    public void Toplam(){
+    public void toplam(){
         System.out.print("\nLütfen İlk Sayıyı Giriniz: ");
         double firstTop = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
@@ -21,7 +21,7 @@ public class ArithmeticOperations {
         System.out.println("Sonuç: " + toplam +"\n");
     }
 
-    public void Fark(){
+    public void fark(){
         System.out.print("\nLütfen İlk Sayıyı Giriniz: ");
         double firstCik = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
@@ -30,7 +30,7 @@ public class ArithmeticOperations {
         System.out.println("Sonuç: " + fark +"\n");
     }
 
-    public void Carpim() {
+    public void carpim() {
         System.out.print("\nLütfen İlk Sayıyı Giriniz: ");
         double firstCar = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
@@ -39,7 +39,7 @@ public class ArithmeticOperations {
         System.out.println("Sonuç: " + carpim +"\n");
     }
 
-    public void Bolum(){
+    public void bolum(){
         System.out.print("\nLütfen İlk Sayıyı Giriniz: ");
         double firstBol = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");

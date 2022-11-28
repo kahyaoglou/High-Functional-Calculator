@@ -4,7 +4,7 @@ public class TriangleCalculator {
     double alan;
     int u, r, yukseklik, kenar1, kenar2, kenar3;
 
-    public int TriangleCalculatorMenu(){
+    public int triangleCalculatorMenu(){
         System.out.println("\n1- Eşkenar Üçgenin Alanı");
         System.out.println("2- Bir Kenarı ve Bu Kenarın Yükseklik Ölçüsü Bilinen Üçgenin Alanı");
         System.out.println("3- Üç Kenarının Uzunluğu Bilinen Üçgenin Alanı");
@@ -15,7 +15,7 @@ public class TriangleCalculator {
         return input.nextInt();
     }
 
-    public void EquilateralTriangleArea(){
+    public void equilateralTriangleArea(){
         System.out.print("\nBir Kenarının Uzunluğunu Giriniz: ");
         kenar1 = input.nextInt();
         if (kenar1 > 0) {
@@ -28,7 +28,7 @@ public class TriangleCalculator {
 
     }
 
-    public void HeightAreaCalculator(){
+    public void heightAreaCalculator(){
         System.out.print("\nBir Kenarının Uzunluğunu Giriniz: ");
         kenar1 = input.nextInt();
         System.out.print("Bu Kenara Ait Yüksekliği Giriniz: ");
@@ -42,7 +42,7 @@ public class TriangleCalculator {
         }
     }
 
-    public void HeronAreaCalculator(){
+    public void heronAreaCalculator(){
         System.out.print("\nİlk Kenarın Uzunluğunu Giriniz: ");
         kenar1 = input.nextInt();
         System.out.print("İkinci Kenarın Uzunluğunu Giriniz: ");
@@ -60,7 +60,7 @@ public class TriangleCalculator {
         }
     }
 
-    public void TangentCircleAreaCalculator(){
+    public void tangentCircleAreaCalculator(){
         System.out.print("\nİlk Kenarın Uzunluğunu Giriniz: ");
         kenar1 = input.nextInt();
         System.out.print("İkinci Kenarın Uzunluğunu Giriniz: ");
@@ -80,7 +80,7 @@ public class TriangleCalculator {
 
     }
 
-    public void CircumCircleAreaCalculator(){
+    public void circumCircleAreaCalculator(){
         System.out.print("\nİlk Kenarın Uzunluğunu Giriniz: ");
         kenar1 = input.nextInt();
         System.out.print("İkinci Kenarın Uzunluğunu Giriniz: ");

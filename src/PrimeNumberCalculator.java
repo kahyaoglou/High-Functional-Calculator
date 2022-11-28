@@ -6,7 +6,7 @@ public class PrimeNumberCalculator {
     Scanner input = new Scanner(System.in);
     int control;
     List<Integer> list = new ArrayList<>();
-    public void PrimeNumberCalculate(){
+    public void primeNumberCalculate(){
         System.out.print("\nSayıyı Giriniz: ");
         int primeNum = input.nextInt();
         for(int i=2; i<= primeNum; i++){

@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class FactorialCalculator {
     Scanner input = new Scanner(System.in);
     int factorial = 1;
-    public void Factorial()
+    public void factorial()
     {
         System.out.print("\nHangi Sayının Faktöriyelini Alalım?:  ");
         int num = input.nextInt();
