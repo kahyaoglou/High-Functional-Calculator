@@ -10,7 +10,7 @@ public class CircleCalculator {
         System.out.println("- Daire Çevre(1)");
         System.out.println("- Daire Alan(2)");
         System.out.println("- Merkez Açılı Dairede Alan(3)");
-        System.out.print("Çıkış(4): ");
+        System.out.print("- Çıkış(4): ");
         return input.nextInt();
     }
     public void circumferenceCalculator(){

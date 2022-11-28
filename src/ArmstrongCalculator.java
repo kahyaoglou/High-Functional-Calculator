@@ -1,17 +1,22 @@
 import java.util.Scanner;
 public class ArmstrongCalculator {
-    Scanner input = new Scanner(System.in);
-    public void ArmstrongCalculate(){
-        int basamakNumber = 0;
-        int armstrongNumber = 0;
-        int tempNumber = armstrongNumber;
-        int basamakValue;
+    public void NarcissisticNumbersCalculate(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Please enter the number: ");
+
+        int number = input.nextInt();
+        int basamakNumber = 0; //Basamak sayısı.
+        int tempNumber = number; //Geçici sayı.
+        int basamakValue; //Basamak değeri.
         int result = 0;
         int basamakPower;
 
-
-        System.out.print("Sayıyı Giriniz: ");
-        armstrongNumber = input.nextInt();
+        //BASAMAK SAYISI BULMA!
+        // 2451 / 10 = 245
+        // 245 / 10 = 24
+        // 24 / 10 = 2
+        // 2 / 10 = 0
+        // 0 / 10 = 0
 
         while(tempNumber != 0)
         {
@@ -19,7 +24,13 @@ public class ArmstrongCalculator {
             basamakNumber++;
         }
 
-        tempNumber = armstrongNumber;
+        tempNumber = number;
+
+        // SON BASAMAĞI BULMA
+        // 2451 % 10 = 1
+        // 245 % 10 = 5
+        // 24 % 10 = 4
+        // 4 & 10 = 2
 
         while (tempNumber != 0)
         {
@@ -34,16 +45,13 @@ public class ArmstrongCalculator {
             tempNumber = tempNumber / 10;
         }
 
-        if (result == armstrongNumber)
+        if (result == number)
         {
-            System.out.println(armstrongNumber + " sayısı bir Armstrong sayıdır.");
-            System.out.println();
+            System.out.println(number + " sayısı bir Armstrong sayıdır.");
         }
         else
         {
-            System.out.println(armstrongNumber + " sayısı bir Armstrong sayı değildir.");
-            System.out.println();
+            System.out.println(number + " sayısı bir Armstrong sayı değildir.");
         }
     }
-
 }

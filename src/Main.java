@@ -169,7 +169,7 @@ public class Main {
                 case 10:
                     do {
                         ArmstrongCalculator armstrongCalculator = new ArmstrongCalculator();
-                        armstrongCalculator.ArmstrongCalculate();
+                        armstrongCalculator.NarcissisticNumbersCalculate();
                         loopCounter.LoopCount();
                     }
                     while(loopCounter.answer <= 0);
