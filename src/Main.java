@@ -25,16 +25,16 @@ public class Main {
                             break;
                         }
                         else if (chooseArithmetic == 1) {
-                            arithmeticOperations.toplam();
+                            arithmeticOperations.sum();
                         }
                         else if(chooseArithmetic == 2){
-                            arithmeticOperations.fark();
+                            arithmeticOperations.minus();
                         }
                         else if(chooseArithmetic == 3){
-                            arithmeticOperations.carpim();
+                            arithmeticOperations.times();
                         }
                         else if (chooseArithmetic == 4){
-                            arithmeticOperations.bolum();
+                            arithmeticOperations.divider();
                         }
                         else{
                             main.errorMessage();

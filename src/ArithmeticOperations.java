@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 public class ArithmeticOperations {
     double toplam, fark, carpim, bolum;
@@ -12,7 +13,7 @@ public class ArithmeticOperations {
         return input.nextInt();
     }
 
-    public void toplam(){
+    public void sum(){
         System.out.print("\nLütfen İlk Sayıyı Giriniz: ");
         double firstTop = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
@@ -21,7 +22,7 @@ public class ArithmeticOperations {
         System.out.println("Sonuç: " + toplam +"\n");
     }
 
-    public void fark(){
+    public void minus(){
         System.out.print("\nLütfen İlk Sayıyı Giriniz: ");
         double firstCik = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
@@ -30,7 +31,7 @@ public class ArithmeticOperations {
         System.out.println("Sonuç: " + fark +"\n");
     }
 
-    public void carpim() {
+    public void times() {
         System.out.print("\nLütfen İlk Sayıyı Giriniz: ");
         double firstCar = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
@@ -39,12 +40,24 @@ public class ArithmeticOperations {
         System.out.println("Sonuç: " + carpim +"\n");
     }
 
-    public void bolum(){
+    public void divider(){
         System.out.print("\nLütfen İlk Sayıyı Giriniz: ");
         double firstBol = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
         double secondBol = input.nextDouble();
-        bolum = firstBol / secondBol;
-        System.out.println("Sonuç: " + bolum +"\n");
+        if(firstBol == 0 && secondBol == 0)
+        {
+            System.out.println("\nSonuç: 0/0 belirsizliği!");
+            System.out.println("Bölen ve Bölünen '0' olmamalıdır.\n");
+        }
+        else if(secondBol == 0)
+        {
+            System.out.println("\nSonuç: Tanımsız!");
+            System.out.println("Bölen '0' olmamalıdır.\n");
+        }
+        else{
+            bolum = firstBol / secondBol;
+            System.out.println("Sonuç: " + bolum +"\n");
+        }
     }
 }
