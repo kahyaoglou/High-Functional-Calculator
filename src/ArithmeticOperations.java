@@ -1,7 +1,7 @@
 import java.sql.SQLOutput;
 import java.util.Scanner;
 public class ArithmeticOperations {
-    double toplam, fark, carpim, bolum;
+    double toplam, fark, carpim, bolum, firstNum, secondNum;
     Scanner input = new Scanner(System.in);
     public int showMenu(){
         System.out.println("\n1- Toplama");
@@ -13,51 +13,55 @@ public class ArithmeticOperations {
         return input.nextInt();
     }
 
-    public void sum(){
+    public void setFirstAndSecondNum(){
         System.out.print("\nLütfen İlk Sayıyı Giriniz: ");
-        double firstTop = input.nextDouble();
+        this.firstNum = input.nextDouble();
         System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
-        double secondTop = input.nextDouble();
-        toplam = (firstTop + secondTop);
+        this.secondNum = input.nextDouble();
+    }
+
+    public void emptyFirstAndSecondNum(){
+        this.firstNum = 0;
+        this.secondNum = 0;
+    }
+
+    public void sum(){
+        setFirstAndSecondNum();
+        toplam = (firstNum + secondNum);
         System.out.println("Sonuç: " + toplam +"\n");
+        emptyFirstAndSecondNum();
     }
 
     public void minus(){
-        System.out.print("\nLütfen İlk Sayıyı Giriniz: ");
-        double firstCik = input.nextDouble();
-        System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
-        double secondCik = input.nextDouble();
-        fark = firstCik-secondCik;
+        setFirstAndSecondNum();
+        fark = firstNum - secondNum;
         System.out.println("Sonuç: " + fark +"\n");
+        emptyFirstAndSecondNum();
     }
 
     public void times() {
-        System.out.print("\nLütfen İlk Sayıyı Giriniz: ");
-        double firstCar = input.nextDouble();
-        System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
-        double secondCar = input.nextDouble();
-        carpim = firstCar * secondCar;
+        setFirstAndSecondNum();
+        carpim = firstNum * secondNum;
         System.out.println("Sonuç: " + carpim +"\n");
+        emptyFirstAndSecondNum();
     }
 
     public void divider(){
-        System.out.print("\nLütfen İlk Sayıyı Giriniz: ");
-        double firstBol = input.nextDouble();
-        System.out.print("Lütfen İkinci Sayıyı Giriniz: ");
-        double secondBol = input.nextDouble();
-        if(firstBol == 0 && secondBol == 0)
+        setFirstAndSecondNum();
+        if(firstNum == 0 && secondNum == 0)
         {
             System.out.println("\nSonuç: 0/0 belirsizliği!");
             System.out.println("Bölen ve Bölünen '0' olmamalıdır.\n");
         }
-        else if(secondBol == 0)
+        else if(secondNum == 0)
         {
             System.out.println("\nSonuç: Tanımsız!");
             System.out.println("Bölen '0' olmamalıdır.\n");
         }
         else{
-            bolum = firstBol / secondBol;
+            bolum = firstNum / secondNum;
             System.out.println("Sonuç: " + bolum +"\n");
         }
+        emptyFirstAndSecondNum();
     }
 }
